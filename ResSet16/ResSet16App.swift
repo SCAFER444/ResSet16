@@ -24,8 +24,8 @@ struct ResSet16App: App {
 #else
         var supported = false
         var needsTrollStore = false
-        if #available(iOS 16.2, *) {
-            supported = false
+        if #available(iOS 16.6, *) {
+            supported = true
         } else if #available(iOS 16.0, *) {
             supported = true
             needsTrollStore = false
